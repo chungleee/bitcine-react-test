@@ -2,11 +2,19 @@
 
     Using SWAPI.co, build a React/Redux app that lists the spaceships from the Star Wars series.
 
-#### Friday, 19th
+#### Saturday, 20th of July
+
+To-do:
+
+- [] display ships name, model, manufacturer
+  - [] starships list component?
+- [] paginate with basic next/prev
+
+#### Friday, 19th of July
 
 - [x] install necessary starting packages
-- [] set up redux boilerplate
-- [] get initial starships data
+- [x] set up redux boilerplate
+- [x] get initial starships data
 
 ---
 
