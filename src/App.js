@@ -1,11 +1,24 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { fetchStarships } from './actions/starshipsActions'
 
-function App() {
-  return (
-    <div>
-      <h1>hello world</h1>
-    </div>
-  )
+class App extends Component {
+  componentDidMount() {
+    this.props.fetchStarships()
+  }
+
+  render() {
+    return <div>hello</div>
+  }
 }
 
-export default App
+const mapStateToProps = state => {
+  return {
+    starships: state.starships
+  }
+}
+
+export default connect(
+  mapStateToProps,
+  { fetchStarships }
+)(App)
