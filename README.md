@@ -4,8 +4,9 @@
 
 #### Friday, 19th
 
-- [] install necessary starting packages
+- [x] install necessary starting packages
 - [] set up redux boilerplate
+- [] get initial starships data
 
 ---
 
