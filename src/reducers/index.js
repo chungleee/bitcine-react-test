@@ -1,6 +1,6 @@
-import spaceshipsReducers from './spaceshipsReducers'
+import starshipsReducers from './starshipsReducers'
 import { combineReducers } from 'redux'
 
 export default combineReducers({
-  spaceships: spaceshipsReducers
+  starships: starshipsReducers
 })
