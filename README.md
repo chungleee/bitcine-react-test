@@ -2,10 +2,10 @@
 
     Using SWAPI.co, build a React/Redux app that lists the spaceships from the Star Wars series.
 
-#### Friday, 19th: To-do
+#### Friday, 19th
 
-[] install necessary starting packages
-[] set up redux boilerplate
+- [] install necessary starting packages
+- [] set up redux boilerplate
 
 ---
 
