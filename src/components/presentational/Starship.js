@@ -16,8 +16,10 @@ const Starship = ({ ship }) => {
           {name}
         </Link>
       </p>
-      <p>Model: {model}</p>
-      <p>Manufacturer: {manufacturer}</p>
+      {model === undefined ? null : <p>{`Model: ${model}`}</p>}
+      {manufacturer === undefined ? null : (
+        <p>{`Manufacturer: ${manufacturer}`}</p>
+      )}
     </li>
   )
 }

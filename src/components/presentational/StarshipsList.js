@@ -3,10 +3,13 @@ import React from 'react'
 import Starship from './Starship'
 
 const StarshipsList = ({ starships }) => {
-  const ships = starships.starships.results
+  let ships = starships.starships.results
+  const jedi = { name: 'luke skywalker' }
+
   if (ships === undefined) {
     return <div>...loading</div>
   } else {
+    ships.splice(8, 0, jedi)
     return (
       <ul>
         {ships.map((ship, idx) => {
