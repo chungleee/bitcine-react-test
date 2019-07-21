@@ -21,16 +21,16 @@ To-do:
 Features:
 
 - [x] Each line should display the ship's name, model and manufacturer
-- [] The list is paginated with basic next/prev buttons
+- [x] The list is paginated with basic next/prev buttons
 - [] After every 8th spaceship, insert the name of a character from Star Wars (don't repeat names)
 
 Requirements:
 
 - [x] ES6
-- [] All data and state stored in Redux
+- [x] All data and state stored in Redux
 - [] Tested (any test framework)
 - [x] Fetch API (https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
-- [] (React Router) Clicking the name of the ship brings you to a new page with more information on the ship
+- [x] (React Router) Clicking the name of the ship brings you to a new page with more information on the ship
 - [x] A basic 'loading' state/indicator when making api calls
 
 Bonus Points:
