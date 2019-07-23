@@ -4,12 +4,11 @@ import Starship from './Starship'
 
 const StarshipsList = ({ starships }) => {
   let ships = starships.starships.results
-  const jedi = { name: 'luke skywalker' }
 
   if (ships === undefined) {
     return <div>...loading</div>
   } else {
-    ships.splice(8, 0, jedi)
+    ships.splice(8, 0, { name: 'leon chung' })
     return (
       <ul>
         {ships.map((ship, idx) => {
