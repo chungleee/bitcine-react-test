@@ -1,17 +1,19 @@
 import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux'
 import { fetchStarships } from './actions/starshipsActions'
+import { fetchCharNames } from './actions/charactersActions'
 import StarshipsList from './components/presentational/StarshipsList'
 
 class App extends Component {
   componentDidMount() {
     const url = 'https://swapi.co/api/starships/'
     this.props.fetchStarships(url)
+    this.props.fetchCharNames()
   }
 
   render() {
-    const previous = this.props.starships.starships.previous
-    const next = this.props.starships.starships.next
+    const { previous, next } = this.props.starships.starships
+    const { starships, characters } = this.props
     return (
       <Fragment>
         <div>
@@ -32,7 +34,7 @@ class App extends Component {
             Next
           </button>
         </div>
-        <StarshipsList starships={this.props.starships} />
+        <StarshipsList starships={starships} characters={characters} />
       </Fragment>
     )
   }
@@ -40,11 +42,12 @@ class App extends Component {
 
 const mapStateToProps = state => {
   return {
-    starships: state.starships
+    starships: state.starships,
+    characters: state.characters.charNames
   }
 }
 
 export default connect(
   mapStateToProps,
-  { fetchStarships }
+  { fetchStarships, fetchCharNames }
 )(App)
