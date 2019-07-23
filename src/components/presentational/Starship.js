@@ -1,10 +1,19 @@
+/** @jsx jsx */
 import React from 'react'
+import { css, jsx } from '@emotion/core'
 import { Link } from 'react-router-dom'
 
 const Starship = ({ ship }) => {
   const { name, model, manufacturer } = ship
   return (
-    <li>
+    <li
+      css={{
+        listStyle: 'none',
+        margin: '1rem 0',
+        padding: '1rem',
+        boxShadow: '0px 0px 4px 2px rgba( 0, 0, 0, 0.2 )'
+      }}
+    >
       <p>
         Name:
         <Link
@@ -13,7 +22,7 @@ const Starship = ({ ship }) => {
             state: { ship }
           }}
         >
-          {name}
+          {` ${name}`}
         </Link>
       </p>
       {model === undefined ? null : <p>{`Model: ${model}`}</p>}
