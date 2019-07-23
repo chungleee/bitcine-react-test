@@ -5,9 +5,8 @@
 #### Monday, 22nd of July
 
 - [x] fetch SW character names
-  - [] insert each name after every 8th ship
+  - [x] insert each name after every 8th ship
 - [x] styling components via Emotion CSS
-- [] testing with Jest + Enzyme
 
 #### Saturday, 20th of July
 
@@ -27,7 +26,7 @@ Features:
 
 - [x] Each line should display the ship's name, model and manufacturer
 - [x] The list is paginated with basic next/prev buttons
-- [] After every 8th spaceship, insert the name of a character from Star Wars (don't repeat names)
+- [x] After every 8th spaceship, insert the name of a character from Star Wars (don't repeat names)
 
 Requirements:
 
