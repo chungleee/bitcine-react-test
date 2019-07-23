@@ -2,13 +2,12 @@ import React from 'react'
 
 import Starship from './Starship'
 
-const StarshipsList = ({ starships }) => {
+const StarshipsList = ({ starships, characters }) => {
   let ships = starships.starships.results
 
-  if (ships === undefined) {
+  if (ships === undefined && characters.length === 0) {
     return <div>...loading</div>
   } else {
-    ships.splice(8, 0, { name: 'leon chung' })
     return (
       <ul>
         {ships.map((ship, idx) => {
