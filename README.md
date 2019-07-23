@@ -2,13 +2,18 @@
 
     Using SWAPI.co, build a React/Redux app that lists the spaceships from the Star Wars series.
 
-#### Saturday, 20th of July
+#### Monday, 22nd of July
 
-To-do:
+- [x] fetch SW character names
+  - [] insert each name after every 8th ship
+- [] styling components via Emotion CSS
+- [] testing with Jest + Enzyme
+
+#### Saturday, 20th of July
 
 - [x] display ships name, model, manufacturer
   - [x] starships list component?
-- [] paginate with basic next/prev
+- [x] paginate with basic next/prev
 
 #### Friday, 19th of July
 
