@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
+import { Global, css } from '@emotion/core'
+
 import thunk from 'redux-thunk'
 import { createStore, applyMiddleware, compose } from 'redux'
 import { Provider } from 'react-redux'
@@ -24,6 +26,24 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
+    <Global
+      styles={css`
+        *,
+        *::before,
+        *::after {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          width: 90%;
+          margin: auto;
+        }
+
+        a {
+          color: black;
+        }
+      `}
+    />
     <Router>
       <Route path="/" exact component={App} />
       <Route path="/:name" component={StarshipInfo} />
