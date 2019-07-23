@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Starship from './Starship'
 
 const StarshipsList = ({ starships, characters }) => {
@@ -10,9 +9,11 @@ const StarshipsList = ({ starships, characters }) => {
   } else {
     const randomIdx = Math.floor(Math.random() * characters.length)
     const randomJedi = characters[randomIdx]
+
     if (randomJedi !== undefined) {
       ships.splice(8, 0, randomJedi)
     }
+
     return (
       <ul>
         {ships.map((ship, idx) => {
