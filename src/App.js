@@ -21,7 +21,8 @@ class App extends Component {
       <div>
         <div
           css={{
-            textAlign: 'center'
+            textAlign: 'center',
+            marginTop: '1rem'
           }}
         >
           <button
