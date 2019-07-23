@@ -6,7 +6,7 @@
 
 - [x] fetch SW character names
   - [] insert each name after every 8th ship
-- [] styling components via Emotion CSS
+- [x] styling components via Emotion CSS
 - [] testing with Jest + Enzyme
 
 #### Saturday, 20th of July
@@ -40,7 +40,7 @@ Requirements:
 
 Bonus Points:
 
-- [] Basic styling via Emotion CSS (inline)
+- [x] Basic styling via Emotion CSS (inline)
 - [] SSR
 - [] Pagination is handled via scrolling
 - [] Use only functional components and React "hooks" for lifecycle features
