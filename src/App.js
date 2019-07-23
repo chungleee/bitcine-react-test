@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { css, jsx } from '@emotion/core'
+import { jsx } from '@emotion/core'
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchStarships } from './actions/starshipsActions'
@@ -17,14 +17,17 @@ class App extends Component {
   render() {
     const { previous, next } = this.props.starships.starships
     const { starships, characters } = this.props
+
+    const styles = {
+      btnContainer: {
+        textAlign: 'center',
+        marginTop: '1rem'
+      }
+    }
+
     return (
       <div>
-        <div
-          css={{
-            textAlign: 'center',
-            marginTop: '1rem'
-          }}
-        >
+        <div css={styles.btnContainer}>
           <button
             onClick={() => {
               this.props.fetchStarships(previous)
